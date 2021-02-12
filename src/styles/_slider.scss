@@ -1,0 +1,37 @@
+.home-slider {
+    // height: 500px;
+  }
+  
+  .carousel-caption > h1,
+  .carousel-caption > p {
+    background-color: rgba(255, 101, 1, 0.8);
+    display: inline-block;
+    padding: 4px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.6rem;
+  }
+  
+  .carousel-caption > h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+//   @media screen and (min-width: 768px) {
+//     .home-slider {
+//       margin-top: -65px;
+//     }
+  
+//     .carousel-caption > h1 {
+//       font-size: 2.5rem;
+//     }
+  
+//     .carousel-caption > p {
+//       font-size: 1.5rem;
+//     }
+//   }
+  
+.slide-img {
+    height: 500px;
+}
