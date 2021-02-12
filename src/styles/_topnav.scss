@@ -1,0 +1,20 @@
+.top-menu {
+    height: 4rem;
+    background-color: $light-pink;
+    border-bottom: .3rem solid $vks-green;
+}
+
+.main-nav {
+    height: 5rem;
+    // background-color: $gray;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        width: 120px;
+    }
+
+    .navbar-nav a {
+        text-transform: uppercase;
+    }
+}
