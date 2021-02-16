@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { FaTwitter, FaFacebookF, FaLinkedin } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import { topMenuLinks } from '../data/MenuItems';
 
 function TopNav() {
   return (
@@ -8,7 +10,12 @@ function TopNav() {
       <Container>
         <nav className="nav d-flex justify-content-between">
           <div className="icons">
-            <a target="_blank" rel="noreferrer" className="pr-3" href="https://twitter.com/VKSConstruction">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="pr-3"
+              href="https://twitter.com/VKSConstruction"
+            >
               <FaTwitter fill="#00acee" />
             </a>
             <a target="_blank" rel="noreferrer" className="pr-3" href="https://www.facebook.com/VKS-Construction-164112374080641/">
@@ -19,11 +26,21 @@ function TopNav() {
             </a>
           </div>
           <div className="menu">
-            <a className="pr-3" href="#career">Career</a>
-            <a className="pr-3" href="#terms">Terms of Use</a>
-            <a className="pr-3" href="#policy">Policy</a>
-            <a className="pr-3" href="#News">News</a>
-            <a href="#contact">Contact Us</a>
+            {topMenuLinks.map(menuLink => (
+              <motion.a
+                whileHover={{
+                  scale: 1.3,
+                  originX: 0,
+                  color: '#24262b',
+                }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                key={menuLink.id}
+                className={`${menuLink.extra_class} menu__links`}
+                href={menuLink.url}
+              >
+                {menuLink.title}
+              </motion.a>
+            ))}
           </div>
         </nav>
       </Container>
