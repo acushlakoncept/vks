@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import { FaTwitter, FaFacebookF, FaLinkedin } from 'react-icons/fa';
 
 function TopNav() {
   return (
@@ -7,9 +8,15 @@ function TopNav() {
       <Container>
         <nav className="nav d-flex justify-content-between">
           <div className="icons">
-            <a className="pr-3" href="#twitter">twitter</a>
-            <a className="pr-3" href="#facebook">facebook</a>
-            <a href="#linkedin">linkedin</a>
+            <a target="_blank" rel="noreferrer" className="pr-3" href="https://twitter.com/VKSConstruction">
+              <FaTwitter fill="#00acee" />
+            </a>
+            <a target="_blank" rel="noreferrer" className="pr-3" href="https://www.facebook.com/VKS-Construction-164112374080641/">
+              <FaFacebookF fill="#3b5998" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/vks-construction">
+              <FaLinkedin fill="#0e76a8" />
+            </a>
           </div>
           <div className="menu">
             <a className="pr-3" href="#career">Career</a>
