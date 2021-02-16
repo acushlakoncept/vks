@@ -1,7 +1,10 @@
 import React from 'react';
 import HomeSlider from './components/HomeSlider';
-import MainNav from './components/mainNav';
-import TopNav from './components/topNav';
+import MainNav from './components/MainNav';
+import TopNav from './components/TopNav';
+import FeatureSection from './components/FeatureSection';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,7 +12,9 @@ function App() {
       <TopNav />
       <MainNav />
       <HomeSlider />
-      <h1>Hello VKS</h1>
+      <FeatureSection />
+      <Projects />
+      <Footer />
     </div>
   );
 }
