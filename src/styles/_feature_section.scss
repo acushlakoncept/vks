@@ -1,0 +1,24 @@
+.feature-section {
+    padding: 100px 0;
+    text-align: center;
+    background-image: url('../images/bg_about.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    .feature-item {
+        padding: 10px;
+        font-size: 1.1rem;
+        font-weight: 300;
+
+        &__img {
+            border-radius: 50%;
+        }
+
+        .title {
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            color: $dark;
+        }
+    }
+}
