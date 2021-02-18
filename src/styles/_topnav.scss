@@ -2,11 +2,24 @@
     height: 4rem;
     background-color: $light-pink;
     border-bottom: .3rem solid $vks-green;
+
+    .menu  {
+
+        &__links {
+           font-size: 13px;
+           color: #888;
+           transform: scale(1.0);
+
+        //    &:hover {
+        //        color: #24262b;
+        //    }
+        } 
+    }
 }
 
 .main-nav {
     height: 5rem;
-    // background-color: $gray;
+    background-color: rgba(255,255,255,0.9);
     display: flex;
     align-items: center;
 
