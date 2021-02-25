@@ -6,9 +6,24 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
 
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);  
+        }
+
+        @media (min-width: 900px) {
+            grid-template-columns: repeat(4, 1fr);  
+        }
+    }
+
     .feature-item {
         padding: 10px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 300;
 
         &__img {
@@ -17,7 +32,7 @@
 
         .title {
             text-transform: uppercase;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: $dark;
         }
     }
