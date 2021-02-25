@@ -6,7 +6,7 @@ import VksProfiles from '../data/vksFeatures';
 function FeatureSection() {
   return (
     <div className="feature-section">
-      <Container className="d-flex justify-content-between">
+      <Container className="features">
 
         { VksProfiles.map(profile => (
           <Feature
