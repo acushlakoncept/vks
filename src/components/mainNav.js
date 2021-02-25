@@ -8,12 +8,12 @@ import logo from '../images/logo.png';
 function MainNav() {
   return (
     <div className="main-nav sticky-top">
-      <img src={logo} className="logo" alt="logo" />
+      {/* <img src={logo} className="logo" alt="logo" /> */}
       <Container className="text-center">
         <Navbar collapseOnSelect expand="lg">
-          {/* <Navbar.Brand href="#home">
+          <Navbar.Brand href="#home">
             <img src={logo} className="logo" alt="logo" />
-          </Navbar.Brand> */}
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
