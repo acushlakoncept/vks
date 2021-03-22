@@ -2,8 +2,8 @@ import React from 'react';
 import HomeSlider from './components/HomeSlider';
 import MainNav from './components/MainNav';
 import TopNav from './components/TopNav';
-import FeatureSection from './components/FeatureSection';
-import Projects from './components/Projects';
+import FeatureSection from './containers/FeatureSection';
+import Projects from './containers/Projects';
 import Footer from './components/Footer';
 
 function App() {
